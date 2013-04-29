@@ -33,7 +33,7 @@ unless Chef::Config[:solo]
   end
 end
 
-group node['jenkins']['node']['group']
+group node['jenkins']['node']['user']
 
 user node['jenkins']['node']['user'] do
   comment "Jenkins CI node (ssh)"
